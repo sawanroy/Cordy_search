@@ -1,0 +1,50 @@
+{
+    "amazon": [
+        "https://www.amazon.in/dp/B0B28DVWRS",
+        "https://www.amazon.in/dp/B0DV3D41GY",
+        "https://www.amazon.in/dp/B0D9VNXR12",
+        "https://www.amazon.in/dp/B09PZBFV99",
+        "https://www.amazon.in/dp/B09P3YTLXM",
+        "https://www.amazon.in/dp/B0C74BT7FX"
+    ],
+    "flipkart": [
+        "https://www.flipkart.com/rrlook-sea-buckthorn-seed/p/itm96e58e60b2a2e",
+        "https://www.flipkart.com/vedomax-sea-buckthorn-berries-powder-dry-50-gm/p/itm23796d6f7cbc8",
+        "https://www.flipkart.com/jiru-sea-buckthorn-juice-rich-omega-3-6-7-9-vitamin-c/p/itm2774ebf5cfe3f",
+        "https://www.flipkart.com/terraveda-sea-buckthorn-berry-powder-150-grams/p/itm66ca23167148c",
+        "https://www.flipkart.com/frubert-dried-sea-buckthorn-100gm-gluten-free-vegan-no-preservative-rich-omega-7-omega-3-golden-berries/p/itm8546ba898951a",
+        "https://www.flipkart.com/vringra-ganoderma-sea-buckthorn-capsules-immunity-booster-himalayan-berry-extract-combo/p/itm75889f8386420",
+        "https://www.flipkart.com/vayujal-sea-buckthorn-juice-500ml-himalayan-berries-rich-omega/p/itm3c0cd1fcc7923",
+        "https://www.flipkart.com/aos-products-100-pure-seabuckthorn-oil/p/itmehtc3xbrt222h",
+        "https://www.flipkart.com/slice-nature-sea-buckthorn-berry-oil-100-pure-virgin-unrefined/p/itmeuf5nxe6dga7t",
+        "https://www.flipkart.com/wellwith-himalayan-sea-buckthorn-berries-powder-rich-omega-vitamin-c-vitamin-e/p/itm73d182ece14cf"
+    ],
+    "1mg": [
+        "https://www.1mg.com/otc/ayuzera-sea-buckthorn-dry-berries-powder-otc1064502",
+        "https://www.1mg.com/otc/sai-herbs-sea-buckthorn-berries-otc1072197",
+        "https://www.1mg.com/otc/natture-zone-sea-buckthorn-juice-otc791778",
+        "https://www.1mg.com/otc/sai-herbs-sea-buckthorn-berries-powder-otc1072176",
+        "https://www.1mg.com/otc/sai-herbs-sea-buckthorn-berries-powder-otc1072181",
+        "https://www.1mg.com/otc/ayuzera-sea-buckthorn-natural-dry-berries-otc1064506",
+        "https://www.1mg.com/otc/sai-herbs-sea-buckthorn-berries-otc1072194",
+        "https://www.1mg.com/otc/sai-herbs-sea-buckthorn-berries-otc1072192",
+        "https://www.1mg.com/otc/berryheal-sea-buckthorn-whole-berry-oil-veg-capsule-32-each-otc840280"
+    ],
+    "indiamart": [
+        "https://m.indiamart.com/proddetail/superberry-max-juice-500-ml-packing-rate-of-70-bottel-23277068562.html",
+        "https://www.indiamart.com/proddetail/sea-buckthorn-dried-berry-2856875418397.html",
+        "https://www.indiamart.com/proddetail/seabuckthorn-berries-2857829583262.html",
+        "https://www.indiamart.com/proddetail/dried-sea-buckthorn-berry-2856315555262.html",
+        "https://www.indiamart.com/proddetail/sea-buckthorn-berries-22700435512.html",
+        "https://www.indiamart.com/proddetail/ag-industries-sea-buckthorn-berry-oil-11008469012.html",
+        "https://www.indiamart.com/proddetail/sea-buckthorn-berry-9521989797.html",
+        "https://www.indiamart.com/proddetail/sea-buckthorn-dried-berry-2858223895097.html",
+        "https://www.indiamart.com/proddetail/sea-buckthorn-berries-2857279922055.html",
+        "https://www.indiamart.com/proddetail/seabuckthorn-berries-2856289405488.html"
+    ],
+    "official_website_candidates": [
+        "https://en.wikipedia.org/wiki/Hippophae",
+        "https://www.amazon.com/seabuckthorn/s?k=seabuckthorn",
+        "https://www.google.com/?olud"
+    ]
+}

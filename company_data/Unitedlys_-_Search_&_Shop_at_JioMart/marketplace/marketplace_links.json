@@ -1,0 +1,31 @@
+{
+    "amazon": [],
+    "flipkart": [
+        "https://www.flipkart.com/jio-fresh-neem-herbal-soap/p/itmfayfvubqkgsfv"
+    ],
+    "1mg": [
+        "https://www.1mg.com/otc/joint-plus-tablet-otc530239",
+        "https://www.1mg.com/drugs/lysoflam-tablet-151654",
+        "https://www.1mg.com/otc/logifeel-imf-cream-with-glycolic-acid-urea-lactic-acid-otc333894",
+        "https://www.1mg.com/otc/lycostar-new-capsule-otc65218",
+        "https://www.1mg.com/otc/unienzyme-xt-tablet-otc986084",
+        "https://www.1mg.com/drugs/ulyses-300-tablet-37957"
+    ],
+    "indiamart": [
+        "https://m.indiamart.com/proddetail/unitedlys-caustic-soda-flakes-24450076433.html",
+        "https://corporate.indiamart.com/2020/10/16/how-indian-companies-are-using-technology-to-reach-new-consumers/",
+        "https://m.indiamart.com/gjtraders-rajapalayam/caustic-soda-flakes.html",
+        "https://www.indiamart.com/proddetail/unitedly-s-bleaching-powder-10930907833.html",
+        "https://buyer.indiamart.com/",
+        "https://www.indiamart.com/sri-ramana-entrepreneurs/products.html",
+        "https://www.indiamart.com/proddetail/npk-19-19-19-fertilizer-bag-100-water-soluble-2854966278012.html",
+        "https://help.indiamart.com/buyer/search-a-product-2/",
+        "https://m.indiamart.com/",
+        "https://www.indiamart.com/proddetail/jiomart-product-listing-service-2854468139748.html"
+    ],
+    "official_website_candidates": [
+        "https://en.wikipedia.org/wiki/JioMart",
+        "https://www.jiomart.com/groceries/b/unitedlys/10944",
+        "https://www.jiomart.com/"
+    ]
+}
