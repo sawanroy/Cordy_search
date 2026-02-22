@@ -7,7 +7,9 @@ from modules.entity_resolver import resolve_entity
 from modules.legal_identity import extract_legal_identity
 from modules.marketplace_finder import find_marketplaces
 from modules.deep_crawl_engine import DeepCrawlEngine
+from modules.revenue.revenue_engine import RevenueEngine
 
+from utils import progress
 from utils.folder_manager import create_company_structure
 from utils.logger import log
 from utils.ollama_manager import ensure_ollama_ready
@@ -72,6 +74,14 @@ def run_analysis(user_input: str):
 
     engine = DeepCrawlEngine()
     deep_results = engine.run(company_name, company_path)
+
+    progress.update()
+
+    # Revenue Stage
+    progress.set_stage("Revenue Analysis")
+
+    revenue_engine = RevenueEngine(company_path)
+    revenue_summary = revenue_engine.run()
 
     progress.update()
 

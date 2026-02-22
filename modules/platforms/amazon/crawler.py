@@ -1,6 +1,5 @@
 import time
 import re
-from urllib.parse import quote_plus
 from modules.platforms.base_platform import BasePlatform
 from utils.scraper import fetch_page
 from .parser import parse_product_page
@@ -11,57 +10,76 @@ class AmazonCrawler(BasePlatform):
     def __init__(self):
         super().__init__("amazon")
 
-    def build_search_url(self, company_name, page=1):
-        query = quote_plus(company_name)
-        return f"https://www.amazon.in/s?k={query}&page={page}"
+    def crawl(self, company_name, limit=20):
 
-    def extract_asins(self, html):
-        return list(set(re.findall(r"/dp/([A-Z0-9]{10})", html)))
-
-    def crawl(self, company_name, limit=50):
-
+        print("=== Starting AMAZON Deep Crawl ===")
         print(f"[Amazon] Deep crawling up to {limit} products")
 
-        discovered_asins = set()
-        page = 1
+        search_url = f"https://www.amazon.in/s?k={company_name.replace(' ', '+')}"
+        html = fetch_page(search_url)
 
-        while len(discovered_asins) < limit and page <= 5:
+        if not html:
+            print("[Amazon] ❌ Failed to load search page.")
+            return []
 
-            search_url = self.build_search_url(company_name, page)
-            print(f"[Amazon] Fetching search page {page}")
+        print(f"[Amazon Debug] Search page length: {len(html)}")
 
-            html = fetch_page(search_url)
-            if not html:
+        html_lower = html.lower()
+
+        # CAPTCHA detection
+        if "captcha" in html_lower or "enter the characters you see below" in html_lower:
+            print("[Amazon] 🚨 CAPTCHA detected. Amazon blocked the request.")
+            return []
+
+        # Soft block detection
+        if len(html) < 5000:
+            print("[Amazon] ⚠️ Page loaded but content too small. Likely blocked or redirected.")
+            return []
+
+        print("[Amazon] ✅ Search page loaded successfully.")
+
+        # Extract ASIN links
+        asin_links = set()
+
+        for match in re.findall(r'/dp/([A-Z0-9]{10})', html):
+            asin_links.add(f"https://www.amazon.in/dp/{match}")
+
+            if len(asin_links) >= limit:
                 break
 
-            asins = self.extract_asins(html)
-
-            for asin in asins:
-                if len(discovered_asins) >= limit:
-                    break
-                discovered_asins.add(asin)
-
-            page += 1
-            time.sleep(2)  # rate limit
+        if not asin_links:
+            print("[Amazon] ❌ No product links found. Possibly blocked.")
+            return []
 
         products = []
 
-        for asin in list(discovered_asins)[:limit]:
+        for link in asin_links:
 
-            product_url = f"https://www.amazon.in/dp/{asin}"
-            print(f"[Amazon] Scraping {product_url}")
+            print(f"[Amazon] Scraping {link}")
 
-            html = fetch_page(product_url)
-            if not html:
+            product_html = fetch_page(link)
+
+            if not product_html:
+                print("[Amazon] ⚠️ Failed to load product page.")
                 continue
 
-            product_data = parse_product_page(html)
+            product_html_lower = product_html.lower()
+
+            if "captcha" in product_html_lower:
+                print("[Amazon] 🚨 CAPTCHA triggered during product scraping.")
+                break
+
+            product_data = parse_product_page(product_html)
+
+            if not product_data.get("name"):
+                continue
+
             product_data["platform"] = "amazon"
-            product_data["url"] = product_url
+            product_data["url"] = link
 
             products.append(product_data)
 
-            time.sleep(2)  # rate limit
+            time.sleep(3)  # Increased delay to reduce blocking
 
         print(f"[Amazon] Completed deep crawl. {len(products)} products scraped.")
 

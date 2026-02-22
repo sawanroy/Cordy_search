@@ -1,43 +1,40 @@
 {
     "amazon": [
-        "https://www.amazon.in/dp/B084W4YRXV"
+        "https://www.amazon.in/dp/B084W4YRXV",
+        "https://www.amazon.in/dp/B07TXFB9YD",
+        "https://www.amazon.in/dp/B07SVLWSFJ",
+        "https://www.amazon.in/dp/B006G84XPI"
     ],
     "flipkart": [
-        "https://healthplus.flipkart.com/himalaya-shigru-60-tablets-himalaya-wellness-company-27/p/88bezn",
-        "https://healthplus.flipkart.com/himalaya-amalaki-60-tablets-himalaya-wellness-company/p/8m3ppa",
-        "https://healthplus.flipkart.com/himalaya-immusante-20-tablets-himalaya-wellness-company-37/p/27xyfv",
-        "https://healthplus.flipkart.com/himalaya-v-gel-30-g-himalaya-wellness-company/p/h3bttz",
-        "https://www.flipkart.com/himalaya-wellness-pure-herbs-tagara-sleep/p/itm035833a0dd55d",
-        "https://healthplus.flipkart.com/himalaya-ophthacare-eye-drop-10-ml-himalaya-wellness-company/p/bgdf3e",
-        "https://healthplus.flipkart.com/himalaya-immusante-20-tablets-himalaya-wellness-company/p/27xyfv",
-        "https://www.flipkart.com/himalaya-wellness-pain-relief-oil-liquid/p/itmeb4cf046c2fa3"
+        "https://healthplus.flipkart.com/himalaya-tentex-royal-10-capsules-himalaya-wellness-company-72/p/wme3rm",
+        "https://www.flipkart.com/himalaya-brahmi-mind-wellness-5-packs-60-tablets-each/p/itm1038ff500084b",
+        "https://healthplus.flipkart.com/himalaya-rumalaya-60-tablets-himalaya-wellness-company-1437/p/4w8aet",
+        "https://healthplus.flipkart.com/himalaya-liv-52-100-tablets-himalaya-wellness-company-10/p/4nlz6l",
+        "https://healthplus.flipkart.com/himalaya-v-gel-30-g-himalaya-wellness-company-44/p/h3bttz",
+        "https://healthplus.flipkart.com/himalaya-arjuna-60-tablets-himalaya-wellness-company-106/p/e9lkm8"
     ],
     "1mg": [
-        "https://www.1mg.com/otc/himalaya-wellness-pure-herbs-shuddha-guggulu-cardiac-wellness-tablet-otc206070",
-        "https://www.1mg.com/drugs/basaglar-kwikpen-solution-for-injection-494845",
-        "https://www.1mg.com/drugs/ed-fort-plus-tablet-653855",
-        "https://www.1mg.com/drugs/bal-ila-25mg-capsule-786443",
-        "https://www.1mg.com/otc/himalaya-himcocid-sugar-free-suspension-antacid-mint-otc158046",
-        "https://www.1mg.com/otc/himalaya-himcocid-sugar-free-suspension-antacid-banana-otc125773",
-        "https://www.1mg.com/otc/himalaya-wellness-himalaya-green-tea-classic-supports-immunity-and-healthy-aging-2gm-each-sachet-classic-otc547176",
-        "https://www.1mg.com/otc/himalaya-himcocid-sugar-free-suspension-antacid-saunf-otc166133",
-        "https://www.1mg.com/drugs/hepcinat-tablet-332906"
+        "https://www.1mg.com/otc/himalaya-wellness-ayurslim-weight-management-otc249083",
+        "https://www.1mg.com/otc/himalaya-ashwagandha-caplet-helps-release-stress-otc927983",
+        "https://www.1mg.com/otc/himalaya-wellness-himalaya-ashwagandha-tablet-stress-relief-supplement-rejuvenates-mind-body-otc322760",
+        "https://www.1mg.com/otc/himalaya-wellness-stress-relief-massage-oil-otc303908",
+        "https://www.1mg.com/otc/himalaya-wellness-pure-herbs-ashvagandha-tablet-60-himalaya-liv.-52-tablet-100-otc917153"
     ],
     "indiamart": [
-        "https://www.indiamart.com/proddetail/himalaya-party-smart-capsule-23520064233.html",
-        "https://dir.indiamart.com/mumbai/ayurvedic-tablets.html",
-        "https://www.indiamart.com/proddetail/himalaya-speman-tablet-20523768755.html",
-        "https://www.indiamart.com/proddetail/himalaya-neem-skin-wellness-tablets-9006738591.html",
         "https://www.indiamart.com/himalayarefrigerationproducts/",
-        "https://www.indiamart.com/rajmedicosmodinagar/",
-        "https://www.indiamart.com/proddetail/himalaya-liv-52-syrup-22596361091.html",
-        "https://www.indiamart.com/himalayasalesinc/",
+        "https://m.indiamart.com/",
+        "https://seller.indiamart.com/",
+        "https://www.indiamart.com/proddetail/himalaya-neem-skin-wellness-tablets-9006738591.html",
         "https://www.indiamart.com/proddetail/himalaya-liv-52-tablet-13169434848.html",
-        "https://www.indiamart.com/proddetail/tulsi-respiratory-wellness-tablets-11714624297.html"
+        "https://www.indiamart.com/proddetail/tulsi-respiratory-wellness-tablets-11714624297.html",
+        "https://dir.indiamart.com/",
+        "https://www.indiamart.com/proddetail/himalaya-wellness-pure-herbs-arjuna-cardiac-wellness-tablet-2852710550112.html",
+        "https://www.indiamart.com/proddetail/himalaya-wellness-herbal-pure-ashvagandha-tablets-for-stress-male-sexual-energy-immunity-boost-2849110358362.html",
+        "https://www.indiamart.com/proddetail/himalaya-wellness-pure-herbs-neem-skin-wellness-tablet-2849634865897.html"
     ],
     "official_website_candidates": [
-        "https://en.wikipedia.org/wiki/Himalaya_Wellness_Company",
+        "https://himalayausa.com/",
         "https://himalayawellness.com/",
-        "https://himalayawellness.in/"
+        "https://www.himalayawellnesscompany.com/"
     ]
 }
