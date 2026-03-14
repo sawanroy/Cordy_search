@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CI Agent - Analyze Company</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; }
+      input[type=text] { width: 300px; padding: 0.5rem; }
+      button { padding: 0.5rem 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Competitive Intelligence Agent</h1>
+    <form action="/analyze" method="post">
+      <label for="company">Company Name / Website / CIN:</label><br>
+      <input type="text" id="company" name="company" required><br><br>
+      <button type="submit">Run Analysis</button>
+    </form>
+  </body>
+</html>

@@ -9,7 +9,6 @@ from modules.marketplace_finder import find_marketplaces
 from modules.deep_crawl_engine import DeepCrawlEngine
 from modules.revenue.revenue_engine import RevenueEngine
 
-from utils import progress
 from utils.folder_manager import create_company_structure
 from utils.logger import log
 from utils.ollama_manager import ensure_ollama_ready
@@ -27,7 +26,8 @@ def run_analysis(user_input: str):
         "Folder Creation",
         "Legal Identity",
         "Marketplace Discovery",
-        "Amazon Product Extraction"
+        "Deep Multi-Channel Crawl",
+        "Revenue Analysis"
     ]
 
     progress = ProgressBar(total_tasks=len(tasks))
@@ -44,7 +44,7 @@ def run_analysis(user_input: str):
 
     if not entity_data.get("top_result"):
         log("Entity resolution failed.", level="ERROR")
-        return
+        return None
 
     company_name = entity_data["top_result"].get("title", "Unknown_Company")
 
@@ -65,7 +65,7 @@ def run_analysis(user_input: str):
 
     # Task 5
     progress.set_stage("Marketplace Discovery")
-    marketplace_data = find_marketplaces(company_name, company_path)
+    find_marketplaces(company_name, company_path)
     progress.update()
 
     # Task 6
@@ -73,7 +73,7 @@ def run_analysis(user_input: str):
     progress.set_stage("Deep Multi-Channel Crawl")
 
     engine = DeepCrawlEngine()
-    deep_results = engine.run(company_name, company_path)
+    engine.run(company_name, company_path)
 
     progress.update()
 
@@ -81,8 +81,11 @@ def run_analysis(user_input: str):
     progress.set_stage("Revenue Analysis")
 
     revenue_engine = RevenueEngine(company_path)
-    revenue_summary = revenue_engine.run()
+    revenue_engine.run()
 
     progress.update()
 
     progress.finish()
+
+    # return the company directory so callers (e.g. a UI) can inspect results
+    return company_path

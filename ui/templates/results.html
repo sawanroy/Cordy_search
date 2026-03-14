@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Results</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; }
+      pre { background: #f4f4f4; padding: 1rem; overflow-x: auto; }
+      .error { color: red; }
+    </style>
+  </head>
+  <body>
+    <h1>Analysis Results</h1>
+    {% if error %}
+      <p class="error">Error: {{ error }}</p>
+    {% else %}
+      <p>Company: <strong>{{ company }}</strong></p>
+      <h2>Data Files</h2>
+      {% for path, content in data.items() %}
+        <h3>{{ path }}</h3>
+        <pre>{{ content | tojson(indent=2) }}</pre>
+      {% endfor %}
+    {% endif %}
+    <p><a href="/">Run another analysis</a></p>
+  </body>
+</html>
